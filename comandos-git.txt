@@ -1,0 +1,15 @@
+
+Inicializar Novo Repositório
+	$git init
+
+Status do Repositório
+	$git status
+
+Adicionar os arquivos que forma modificados para fazer o commit posteriormente por nome
+	$git add 'index.html'
+
+Remover os arquivos - servidor
+	$git rm index.html
+
+Remover os arquivos - force (local)
+	$git rm -f index.html
