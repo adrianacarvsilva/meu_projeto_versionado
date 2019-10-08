@@ -25,3 +25,18 @@ Usuários e senhas para autenticar automaticamente
 	$git config --global credential.helper 'store'
 	$git git-credentials
 
+Conectando repositórios locais com repositórios remotos
+	$git remote 
+	$git remote -v (verifica se já existe diretório cadastrado com mesmo nome)
+	$git remote add origin git@github.com:adrianacarvsilva/meu_projeto_versionado.git
+
+Enviando alterações para o repositório remoto
+	$git push --set-upstream origin master
+
+Alterando o valor do repositório remoto configurado
+	$git remote set-url origin 'novaurl'
+
+
+
+
+
