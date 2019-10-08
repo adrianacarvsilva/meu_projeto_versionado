@@ -5,7 +5,7 @@ Inicializar Novo Repositório
 Status do Repositório
 	$git status
 
-Adicionar os arquivos que forma modificados para fazer o commit posteriormente por nome
+Adicionar os arquivos que foram modificados para fazer o commit posteriormente por nome
 	$git add 'index.html'
 
 Remover os arquivos - servidor
@@ -13,3 +13,15 @@ Remover os arquivos - servidor
 
 Remover os arquivos - force (local)
 	$git rm -f index.html
+
+Commit nos arquivos
+ 	$git add . (add todos) git add 'nomedoarquivo.extensao'
+	$git commit -m 'descrição do commit'
+
+Após alterar um arquivo e desejar retornar para a versão anterior
+	$git checkout -- 'index.html'  
+
+Usuários e senhas para autenticar automaticamente
+	$git config --global credential.helper 'store'
+	$git git-credentials
+
