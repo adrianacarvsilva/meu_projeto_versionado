@@ -32,9 +32,16 @@ Conectando repositórios locais com repositórios remotos
 
 Enviando alterações para o repositório remoto
 	$git push --set-upstream origin master
+	$git push -f origin master
 
 Alterando o valor do repositório remoto configurado
 	$git remote set-url origin 'novaurl'
+
+Clonando um repositório
+	$git clone url
+
+Atualizando o ambiente local com os commits do servidor
+	$git pull
 
 
 
