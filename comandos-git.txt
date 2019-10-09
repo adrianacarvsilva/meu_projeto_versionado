@@ -43,6 +43,20 @@ Clonando um repositório
 Atualizando o ambiente local com os commits do servidor
 	$git pull
 
+Verificando histórico
+	$git log
+
+Tags - Marcos do repositório
+	$git tag 1.1
+	$git push --tags
+
+Criação de branch
+	$git branch 'feature/teste'
+
+
+
+
+
 
 
 
