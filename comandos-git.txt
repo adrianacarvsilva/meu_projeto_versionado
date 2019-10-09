@@ -53,6 +53,10 @@ Tags - Marcos do repositório
 Criação de branch
 	$git branch 'feature/teste'
 
+Deletar branch
+	$git branch -D 'feature/teste'
+
+
 
 
 
