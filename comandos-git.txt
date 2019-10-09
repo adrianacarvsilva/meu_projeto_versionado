@@ -56,6 +56,17 @@ Criação de branch
 Deletar branch
 	$git branch -D 'feature/teste'
 
+Checkout - Receber branchs do servidor
+	$git checkout 'feature/teste'
+
+Merge de duas branches
+	$git checkout 'master' (branch que receberá as alterações)
+	$git merge 'feature/teste'
+
+Rebase
+	Altera o ponto de corte inicial de uma branch (utilizando principalmente para conflitos)
+	$git rebase 'master'
+
 
 
 
