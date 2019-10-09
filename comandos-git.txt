@@ -91,7 +91,12 @@ Git Stash - Guarda o estado dos arquivos do momento
 Git Stash - Voltar estados guardados
 	$git stash pop
 
+Diferenças do arquivo
+	$git diff
+
 ------------ GIT FLOW ------------
+
+---GIT FLOW FEATURE
 
 Start nova branch
 	$git flow feature start nomebranch 
@@ -110,8 +115,60 @@ Finish branch
 Publish branch - Cria uma branch remota e faz a conexão com a branch local
 	$git flow feature publish nomebranch
 	
+---GIT FLOW FEATURE
+
+---GIT FLOW RELEASE
+
+Start nova branch
+	$git flow release start nomebranch 
+
+	- se baseia na branch develop
+	- já cria na estrutura release/nomebranch
+	- já dá checkout na nova branch
+
+Finish branch
+	$git flow release finish nomebranch
 	
+	- já faz o merge na branch master
+	- deleta a release branch
+	- já dá o checkout na master
+	- cria uma tag com o nome release/nomebranch
+	- já faz o merge na branch develop
+	- muda a branch atual para develop
+
+Publish branch - Cria uma branch remota e faz a conexão com a branch local
+	$git flow release publish nomebranch
+
+---GIT FLOW RELEASE
+
 	
+i modo inserção
+:x
+esc para salvar
+
+---GIT FLOW HOTFIX
+
+Start nova branch
+	$git flow hotfix start nomebranch 
+
+	- se baseia na branch master
+	- já cria na estrutura hotfix/nomebranch
+	- já dá checkout na nova branch
+
+Finish branch
+	$git flow hotfix finish nomebranch
+	
+	- já faz o merge na branch master
+	- deleta a hotfix branch
+	- já dá o checkout na master
+	- cria uma tag com o nome hotfix/nomebranch na master
+	- já faz o merge na branch develop
+	- muda a branch atual para develop
+
+Publish branch - Cria uma branch remota e faz a conexão com a branch local
+	$git flow hotfix publish nomebranch
+
+---GIT FLOW HOTFIX
 
 
 
