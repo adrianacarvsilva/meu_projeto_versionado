@@ -71,7 +71,18 @@ Subir branch pro servidor
 	$git push --set-upstream feature/branchA
 
 Cherry-pick - Seleciona somente alguns commits
-	
+	$git cherry-pick feature/mudancas 475b631d18f9d4c46f0de776fc320265aa0c8d35
+
+Reset commit
+	$git reset 475b631d18f9d4c46f0de776fc320265aa0c8d35
+
+Reset commit + de 1
+	$git reset HEAD 'hash'
+
+Limpar a área de trabalho local após o reset
+	$git checkou -- .
+	$git clean -f
+
 
 
 
