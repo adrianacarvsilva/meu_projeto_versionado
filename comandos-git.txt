@@ -83,6 +83,40 @@ Limpar a área de trabalho local após o reset
 	$git checkou -- .
 	$git clean -f
 
+Git Stash - Guarda o estado dos arquivos do momento
+	$git add .
+	$git stash
+	$git stash list
+
+Git Stash - Voltar estados guardados
+	$git stash pop
+
+------------ GIT FLOW ------------
+
+Start nova branch
+	$git flow feature start nomebranch 
+
+	- se baseia na branch develop
+	- já cria na estrutura feature/nomebranch
+	- já dá checkout na nova branch
+
+Finish branch
+	$git flow feature finish nomebranch
+	
+	- já faz o merge na branch develop
+	- deleta a feature branch
+	- já dá o checkout na develop
+
+Publish branch - Cria uma branch remota e faz a conexão com a branch local
+	$git flow feature publish nomebranch
+	
+	
+	
+
+
+
+	
+
 
 
 
